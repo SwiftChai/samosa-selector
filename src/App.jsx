@@ -10,6 +10,22 @@ const App = () => {
     setCount(count + multiplier);
   }
 
+  function buyDoubleStuffed() {
+    if (count >= 10) {
+      setMultiplier(multiplier * 2);
+    }
+  }
+    function buyPartyPack() {
+    if (count >= 100) {
+      setMultiplier(multiplier * 5);
+    }
+  }
+    function buyFullFeast() {
+    if (count >= 1000) {
+      setMultiplier(multiplier * 10);
+    }
+  }
+
   return (
     <div className="App"> {/* Image and headlines */}
       <div className="Header">  
@@ -22,17 +38,17 @@ const App = () => {
         <div className="upgrade">  
           <h3>Double Stuffed 👯‍♀️</h3>
           <p>2 samosas per click!</p>
-          <button className="button">Cost: 10 Samosas</button>
+          <button className="button" onClick={buyDoubleStuffed}>Cost: 10 Samosas</button>
         </div>
         <div className="upgrade">  
           <h3>Party Pack 🎉</h3>
           <p>5 samosas per click!</p>
-          <button className="button">Cost: 100 Samosas</button>
+          <button className="button" onClick={buyPartyPack}>Cost: 100 Samosas</button>
         </div>
         <div className="upgrade">  
           <h3>Full Feast 👩🏽‍🍳</h3>
           <p>10 samosas per click!</p>
-          <button className="button">Cost: 1000 Samosas</button>
+          <button className="button" onClick={buyFullFeast}>Cost: 1000 Samosas</button>
         </div>
       </div>
     </div>
