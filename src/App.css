@@ -181,4 +181,13 @@
     right: 0;
     border-right-color: var(--border);
   }
+
 }
+
+.samosa {
+  height: 15em;
+  padding: 1.5em;
+  margin: 0 auto;
+  text-align: center;
+}
+
