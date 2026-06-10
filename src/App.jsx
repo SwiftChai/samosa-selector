@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import samosaImage from './assets/img/samosa.png';
 
 /* Adds counter to samosa image, +1 with every click */
 const App = () => {
@@ -34,7 +35,7 @@ const App = () => {
       <div className="Header">  
         <h1>Samosa Selector</h1> 
         <h2>Count: {count}</h2>
-        <img className="samosa" src="src/assets/img/samosa.png" onClick={updateCount} alt="samosa"/>
+        <img className="samosa" src={samosaImage} onClick={updateCount} alt="samosa"/>
       </div>
       {/* Upgrade options */}
       <div className="container">
