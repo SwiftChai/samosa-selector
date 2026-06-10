@@ -12,16 +12,19 @@ const App = () => {
 
   function buyDoubleStuffed() {
     if (count >= 10) {
+      setCount(count - 10)
       setMultiplier(multiplier * 2);
     }
   }
     function buyPartyPack() {
     if (count >= 100) {
+      setCount(count - 100)
       setMultiplier(multiplier * 5);
     }
   }
     function buyFullFeast() {
     if (count >= 1000) {
+      setCount(count - 1000)
       setMultiplier(multiplier * 10);
     }
   }
